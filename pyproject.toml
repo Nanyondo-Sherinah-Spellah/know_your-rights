@@ -1,0 +1,18 @@
+[project]
+name = "know-your-rights"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "pymupdf>=1.28.2",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+know-your-rights = "know_your_rights:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"

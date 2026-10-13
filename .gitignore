@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# ChromaDB generated database
+data/chroma_db/
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db

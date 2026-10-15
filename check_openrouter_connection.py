@@ -6,15 +6,15 @@ from openai import OpenAI
 
 load_dotenv()
 
-api_key = os.getenv("OPENROUTER_API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
 
 if not api_key:
     raise RuntimeError(
-        "OPENROUTER_API_KEY was not found in your .env file."
+        "OPENAI_API_KEY was not found in your .env file."
     )
 
 client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
+    base_url="https://openai.ai/api/v1",
     api_key=api_key,
 )
 
@@ -35,7 +35,7 @@ response = client.chat.completions.create(
 choice = response.choices[0]
 message = choice.message
 
-print("OpenRouter connection successful!")
+print("Openai connection successful!")
 print("Model:", response.model)
 print("Finish reason:", choice.finish_reason)
 print("\nModel response:")

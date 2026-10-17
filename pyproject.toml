@@ -5,11 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "argon2-cffi>=25.1.0",
     "chromadb>=1.5.9",
     "langchain-openai>=1.7.2",
+    "litellm>=1.83.0",
     "openai>=3.29.0",
     "pymupdf>=1.28.2",
     "python-dotenv>=1.2.4",
+    "reportlab>=5.0.1",
     "sentence-transformers>=6.1.0",
     "streamlit>=1.66.0",
 ]
